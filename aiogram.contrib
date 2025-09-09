@@ -1,0 +1,12 @@
+from aiogram import BaseMiddleware
+from aiogram.types import Message, CallbackQuery
+import logging
+
+class LogAllEventsMiddleware(BaseMiddleware):
+    async def on_process_message(self, message: Message, data: dict):
+        logging.info(f"Received message: {message.text} from {message.from_user.id}")
+        return message
+
+    async def on_process_callback_query(self, callback_query: CallbackQuery, data: dict):
+        logging.info(f"Received callback query: {callback_query.data} from {callback_query.from_user.id}")
+        return callback_query
