@@ -3,7 +3,7 @@ services:
     name: link-remover-bot
     runtime: python
     plan: free
-    repo: https://github.com/youruser/link_remover_bot
+    repo: https://github.com/Artist0455/Link-remover-
     buildCommand: pip install -r requirements.txt
     startCommand: python main.py
     envVars:
