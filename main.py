@@ -4,7 +4,7 @@ from aiogram.utils.executor import start_webhook
 import os
 import re
 
-TOKEN = os.getenv("BOT_TOKEN")
+TOKEN = os.getenv("8001817402:AAF0sYDa7E4_gYa-6sxVJnh-mWWpj3mHa_A")
 WEBHOOK_PATH = f"/webhook/{TOKEN}"
 WEBHOOK_URL = os.getenv("WEBHOOK_URL") or "https://YOUR_RENDER_URL" + WEBHOOK_PATH
 
